@@ -27,11 +27,10 @@ class FiguraPage extends StatelessWidget {
       floatingActionButton: GetBuilder<FiguraController> (
         builder: (figurasController) => FloatingActionButton(
           child: Icon(
-            Icons.stop,
+            Icons.change_circle,
             color: figurasController.color2,
           ),
           onPressed: () {
-            figurasController.switchBtnColor();
             figurasController.switchColor();
             figurasController.switchFigShape();
           }
