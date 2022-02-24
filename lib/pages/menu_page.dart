@@ -66,6 +66,13 @@ class MenuPage extends StatelessWidget {
             title: const Text("Figura"),
             leading: const Icon(Icons.circle, color: Colors.purple),
             trailing: const Icon(Icons.arrow_forward_ios, color: Colors.purple)
+          ),
+          const Divider(),
+          ListTile(
+            onTap: () => Navigator.pushNamed(context, "/galeria"),
+            title: const Text("Galería"),
+            leading: const Icon(Icons.image, color: Colors.purple),
+            trailing: const Icon(Icons.arrow_forward_ios, color: Colors.purple)
           )
         ],
       ),

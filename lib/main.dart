@@ -1,11 +1,13 @@
 import 'package:prueba_1/controllers/contador_controller.dart';
 import 'package:prueba_1/controllers/figura_controller.dart';
+import 'package:prueba_1/controllers/galeria_controller.dart';
 import 'package:prueba_1/controllers/menu_controller.dart';
 import "package:prueba_1/pages/card_page.dart";
 import "package:prueba_1/pages/contador_page.dart";
 import "package:prueba_1/pages/container_page.dart";
 import 'package:prueba_1/pages/figura-page.dart';
 import 'package:prueba_1/pages/form_page.dart';
+import 'package:prueba_1/pages/galeria_page.dart';
 import 'package:prueba_1/pages/list_view_page.dart';
 import 'package:prueba_1/pages/menu_controller_pages.dart';
 import "package:prueba_1/pages/menu_page.dart";
@@ -17,6 +19,7 @@ void main() {
   Get.lazyPut(() => ContadorController());
   Get.lazyPut(() => MenuController());
   Get.lazyPut(() => FiguraController());
+  Get.lazyPut(() => GaleriaController());
   runApp(const MyApp());
 }
 
@@ -38,7 +41,8 @@ class MyApp extends StatelessWidget {
         "/listview": (context) => const ListViewPage(),
         "/form": (context) => const FormPage(),
         "/menu-controller": (context) => const MenuControllerPages(),
-        "/figura": (context) => const FiguraPage()
+        "/figura": (context) => const FiguraPage(),
+        "/galeria": (context) => GaleriaPage()
       },
     );
   }
